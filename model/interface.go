@@ -269,6 +269,7 @@ type TableColumn interface {
 	HasCharacterSet() bool
 	CharacterSet() string
 	SetCharacterSet(string) TableColumn
+	SetCollation(string) TableColumn
 	HasCollation() bool
 	Collation() string
 	HasDefault() bool
