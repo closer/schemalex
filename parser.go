@@ -1091,6 +1091,10 @@ func (p *Parser) parseColumnIndexKey(ctx *parseCtx, index model.Index) error {
 		return err
 	}
 
+	if err := p.parseColumnIndexType(ctx, index); err != nil {
+		return err
+	}
+
 	return nil
 }
 
